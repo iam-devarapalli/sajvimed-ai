@@ -19,3 +19,7 @@ The most important feature is “When and how to take it.” Some instructions r
 Indian Website: https://cdscoonline.gov.in/CDSCO/brandNames
 
 USA Website: https://lhncbc.nlm.nih.gov/RxNav/APIs/api-Prescribable.getApproximateMatch.html
+
+### 3. Build it with FastAPI, PostgreSQL, and React
+<img width="1140" height="1332" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/7c7bd039-7335-4f27-b1cd-6f3b975b3740" />
+
