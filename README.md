@@ -23,3 +23,13 @@ USA Website: https://lhncbc.nlm.nih.gov/RxNav/APIs/api-Prescribable.getApproxima
 ### 3. Build it with FastAPI, PostgreSQL, and React
 <img width="1140" height="1332" alt="mermaid-diagram" src="https://github.com/user-attachments/assets/7c7bd039-7335-4f27-b1cd-6f3b975b3740" />
 
+### 3.1 Build the catalogue:
+Store each product and its aliases in PostgreSQL. Keep the ingredient, strength, form, route, market, and manufacturer. Link every profile to a versioned source document.
+
+### 3.2 Build the lookup and drug card first:
+Create GET /drugs/search?q=...&market=IN for product selection and GET /drugs/{id} for the verified profile. Render timing, food instructions, and serious warnings directly from reviewed fields.
+### 3.3 Add RAG for follow-up questions:
+Create POST /drugs/{id}/ask. Use LangChain to retrieve sections from the confirmed product’s label and an LLM to explain them in plain language with citations. If the source has no answer, say so. For questions like “Can I take it at midnight instead?” show the verified instructions and direct the user to a pharmacist or prescriber for an individual schedule change.
+### 3.4 Evaluate with LangSmith: 
+Test misspellings, look-alike brands, combination products, different strengths and release forms, missing timing, missed doses, and requests to change a prescribed schedule. Your most important checks are correct product selection and zero invented dose or timing instructions.
+
