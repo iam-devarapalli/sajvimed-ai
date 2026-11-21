@@ -1,4 +1,4 @@
-# sajvimed-ai
+# SajviMed - AI
 Intelligent Healthcare Knowledge & Research Assistant.
 
 ### Project vision: 
