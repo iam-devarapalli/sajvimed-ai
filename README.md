@@ -17,3 +17,4 @@ The most important feature is “When and how to take it.” Some instructions r
 <img width="717" height="217" alt="Screenshot 2026-11-21 at 9 05 25 PM" src="https://github.com/user-attachments/assets/f7628018-b0a5-4202-9215-beccf7f54012" />
 
 Indian Website: https://cdscoonline.gov.in/CDSCO/brandNames
+USA Website: https://lhncbc.nlm.nih.gov/RxNav/APIs/api-Prescribable.getApproximateMatch.html
